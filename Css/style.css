@@ -1,0 +1,123 @@
+* {
+    padding: 0px;
+	margin: 0px;
+    box-sizing: border-box;
+	
+}
+
+body {
+    background-image: url("../imagens/img4.jpg");           /* imagem do mundo do cadastro */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;                     /* (repeat,size,position,attachment) deixa  img responsivo */
+    background-attachment: fixed;
+    font-family:Arial;
+
+}
+
+input {
+    display: block;                                         /* Deixa os inputs um abaixo do outro */
+    height: 55px;                                           /* Altura dos input */
+    width: 390px;                                           /* Largura dos input */
+    margin: 10px;                                           /* Distanciamento dos inputs " evita eles ficarem grudados " */
+    border-radius: 30px;                                    /* Arredonda as bordas conforme o aumento do px */
+    border: 1px solid black;                              /* Deixa a borda solida e preta */
+    font-size: 16pt;                                        /* Aumenta a fonte dentro dos inputs */
+    padding: 10px 20px;                                     /* Aumenta o tamanho dos inputs */
+    background-color: rgba(255, 255, 255, 0.753);         /* pinta a cor de dentro dos inputs */
+    color: white;                                         /* Define a cor do nome do input */
+    outline: none;                                          /* tira a margem quando clica nos botões*/ 
+    transition: .5s;
+}
+
+div#corpo-form{
+	width: 420px;                                             /* Centraliza a parte do formulario */
+	margin: 130px auto 0px auto;
+	
+ }
+
+ div#corpo-form-cadastro {
+	width: 420px;                                              /* Centraliza a parte do formulario */
+	margin: 80px auto 0px auto;
+
+}
+
+div#corpo-form h1, div#corpo-form-cadastro h1 {
+	text-align: center;
+	padding: 20px;
+    color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;                                     /* tira o _ de baixo do texto */
+	text-align:center;
+	display: block;
+
+}
+
+a:hover{
+    text-align:center;
+    text-decoration: underline;                                /* Faz com que o _ só apareça quando voce colocar o ponteiro em cima */
+	color: #ff2525b2;                                           /* Efeito quando passa em cima do input */
+    display: block;
+    
+    
+
+}
+
+input:hover {
+    color: rgb(0, 0, 0);                                           /* Efeito quando passa em cima do input */
+    background: #56a2e946;
+    
+
+    
+}
+
+input[type=submit] {
+	background-color: #ce0000de;          
+	border: none;                                              /*tira a borda do input Login */
+    cursor:  pointer;  
+    
+                                           /* deixa o cursor de mãozinha no input Login*/
+}
+
+        /* DEIXAR OS CAMPOS USUARIO E SENHA BRANCO  */
+
+        ::-webkit-input-placeholder { /* webkit browser */
+            color: rgb(0, 0, 0);
+        } 
+        
+        :-moz-placeholder {  /* Mozilla Firefox 4 para 18 */
+            color: rgb(0, 0, 0);
+        }
+        
+        ::-moz-placeholder {  /* Mozilla Firefox 19+*/
+            color: rgb(0, 0, 0);
+        }
+        
+        :-ms-input-placeholder {  /* Internet Explorer 10+*/
+            color: rgb(0, 0, 0);
+        }
+                                      /* ACABA AQUI  */
+                    
+div#msg-sucesso{
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(50,205,50,.3);
+	border: 1px solid rgb(34,139,34);
+	border-radius: 30px;
+
+
+}
+
+div.msg-erro{
+	width: 250px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(1, 100, 230, 0.3);
+	border: 1px solid rgb(1, 100, 230, 0.3);
+	 border-radius: 30px; 
+
+}
